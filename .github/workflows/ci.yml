@@ -33,6 +33,8 @@ jobs:
           # Runtime to use for the enrichment.
           CF_RUNTIME_NAME: 'codefresh-hosted'
 
+          CF_HOST_URL: 'https://ilia-cf-url.ngrok.io'
+
           # API key for authentication to Codefresh. !! Committing a plain text token is a security risk. We highly recommend using encrypted secrets. !!
           # Documentation - https://docs.github.com/en/actions/security-guides/encrypted-secrets
           CF_API_KEY: ${{secrets.CF_API_KEY}}
