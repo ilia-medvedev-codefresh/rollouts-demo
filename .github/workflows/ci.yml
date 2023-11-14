@@ -52,14 +52,17 @@ jobs:
           CF_GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
           # Issue tracking integration to use to enrich the image.
-          CF_JIRA_INTEGRATION: 'jira'
+          # CF_JIRA_INTEGRATION: 'jira'
 
-          # Jira project prefix  identifying the ticket number to use.
-          CF_JIRA_PROJECT_PREFIX: 'CR'
+          # # Jira project prefix  identifying the ticket number to use.
+          # CF_JIRA_PROJECT_PREFIX: 'CR'
 
-          # Search for issue IDs matching this string to associate with your image.
-          CF_JIRA_MESSAGE: ${{ github.event.pull_request.head.ref }}
+          # # Search for issue IDs matching this string to associate with your image.
+          # CF_JIRA_MESSAGE: ${{ github.event.pull_request.head.ref }}
         uses: codefresh-io/codefresh-report-image@latest
+
+
+        
      # - name: report image
       #  with:
           # Name of runtime to implement the enrichment
